@@ -12,8 +12,14 @@
   </property>
   <property name="minimumSize">
    <size>
-    <width>600</width>
-    <height>500</height>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -87,11 +93,11 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>plumber.jpeg</normaloff>plumber.jpeg</iconset>
+      <normaloff>plumber.png</normaloff>plumber.png</iconset>
     </property>
     <property name="iconSize">
      <size>
-      <width>100</width>
+      <width>80</width>
       <height>100</height>
      </size>
     </property>
@@ -125,7 +131,7 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>computer_services.jpg</normaloff>computer_services.jpg</iconset>
+      <normaloff>computer_services.png</normaloff>computer_services.png</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -163,11 +169,11 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>mechanic.jpeg</normaloff>mechanic.jpeg</iconset>
+      <normaloff>mechanic.png</normaloff>mechanic.png</iconset>
     </property>
     <property name="iconSize">
      <size>
-      <width>150</width>
+      <width>90</width>
       <height>110</height>
      </size>
     </property>
@@ -212,6 +218,9 @@ p, li { white-space: pre-wrap; }
       <bold>true</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: black</string>
+    </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Mechanics&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
@@ -245,11 +254,11 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>home_design.jpeg</normaloff>home_design.jpeg</iconset>
+      <normaloff>home_design.png</normaloff>home_design.png</iconset>
     </property>
     <property name="iconSize">
      <size>
-      <width>100</width>
+      <width>80</width>
       <height>100</height>
      </size>
     </property>
@@ -287,7 +296,7 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="iconSize">
      <size>
-      <width>230</width>
+      <width>200</width>
       <height>150</height>
      </size>
     </property>
@@ -321,11 +330,11 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>cleaning.jpeg</normaloff>cleaning.jpeg</iconset>
+      <normaloff>cleaning.png</normaloff>cleaning.png</iconset>
     </property>
     <property name="iconSize">
      <size>
-      <width>100</width>
+      <width>60</width>
       <height>95</height>
      </size>
     </property>
@@ -359,12 +368,12 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>yard_work.jpeg</normaloff>yard_work.jpeg</iconset>
+      <normaloff>yard_work.png</normaloff>yard_work.png</iconset>
     </property>
     <property name="iconSize">
      <size>
-      <width>110</width>
-      <height>100</height>
+      <width>70</width>
+      <height>80</height>
      </size>
     </property>
    </widget>
@@ -394,6 +403,9 @@ p, li { white-space: pre-wrap; }
       <weight>75</weight>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: black</string>
     </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Cleaning&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -425,6 +437,9 @@ p, li { white-space: pre-wrap; }
       <weight>75</weight>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: black</string>
     </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Plumbing&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -462,12 +477,12 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>electrical.jpg</normaloff>electrical.jpg</iconset>
+      <normaloff>electrical.png</normaloff>electrical.png</iconset>
     </property>
     <property name="iconSize">
      <size>
-      <width>190</width>
-      <height>100</height>
+      <width>150</width>
+      <height>150</height>
      </size>
     </property>
    </widget>
@@ -485,6 +500,9 @@ p, li { white-space: pre-wrap; }
       <weight>75</weight>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: black</string>
     </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:28pt; font-weight:600;&quot;&gt;Our services&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -520,6 +538,9 @@ p, li { white-space: pre-wrap; }
       <bold>true</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: black</string>
+    </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Electicals&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
@@ -538,6 +559,9 @@ p, li { white-space: pre-wrap; }
       <weight>75</weight>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: black</string>
     </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt; font-weight:600; text-decoration: underline;&quot;&gt;Home services&lt;/span&gt;&lt;span style=&quot; font-size:20pt; font-weight:600;&quot;&gt; :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -583,6 +607,9 @@ p, li { white-space: pre-wrap; }
       <bold>true</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: black</string>
+    </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Laundry&lt;br/&gt;services&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
@@ -614,6 +641,9 @@ p, li { white-space: pre-wrap; }
       <bold>true</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: black</string>
+    </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Home design&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
@@ -632,6 +662,9 @@ p, li { white-space: pre-wrap; }
       <weight>75</weight>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: black</string>
     </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt; font-weight:600; text-decoration: underline;&quot;&gt;Repair&lt;/span&gt;&lt;span style=&quot; font-size:20pt; font-weight:600;&quot;&gt; :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -664,6 +697,9 @@ p, li { white-space: pre-wrap; }
       <bold>true</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: black</string>
+    </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Yard work&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
@@ -681,7 +717,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../Downloads/download (1).xcf</pixmap>
+     <pixmap>IMG_0536.jpeg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>

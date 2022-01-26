@@ -7,8 +7,20 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>598</height>
+    <height>600</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
@@ -17,8 +29,8 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>6</y>
+      <x>270</x>
+      <y>10</y>
       <width>241</width>
       <height>45</height>
      </rect>
@@ -27,14 +39,14 @@
      <string notr="true">color: black</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; font-weight:600; text-decoration: underline;&quot;&gt;Electricals        &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:22pt; font-weight:600; text-decoration: underline;&quot;&gt;Electricals&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_back">
     <property name="geometry">
      <rect>
-      <x>720</x>
-      <y>520</y>
+      <x>730</x>
+      <y>530</y>
       <width>60</width>
       <height>60</height>
      </rect>
@@ -84,8 +96,8 @@
    <widget class="QPushButton" name="pushButton_drill">
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>440</y>
+      <x>630</x>
+      <y>450</y>
       <width>80</width>
       <height>80</height>
      </rect>
@@ -107,11 +119,11 @@
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>drill_hang.jpeg</normaloff>drill_hang.jpeg</iconset>
+      <normaloff>drill_hang.png</normaloff>drill_hang.png</iconset>
     </property>
     <property name="iconSize">
      <size>
-      <width>100</width>
+      <width>60</width>
       <height>100</height>
      </size>
     </property>
@@ -119,25 +131,25 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>40</x>
       <y>150</y>
-      <width>81</width>
-      <height>48</height>
+      <width>131</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">color: black</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Switch and&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Socket&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Switch and Socket&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_10">
     <property name="geometry">
      <rect>
-      <x>580</x>
+      <x>620</x>
       <y>390</y>
-      <width>60</width>
+      <width>101</width>
       <height>48</height>
      </rect>
     </property>
@@ -145,14 +157,14 @@
      <string notr="true">color: black</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Air cooler&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Repair&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Air cooler Repair&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_inverter">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>310</y>
+      <x>70</x>
+      <y>320</y>
       <width>80</width>
       <height>80</height>
      </rect>
@@ -174,11 +186,11 @@
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>inverter_stabilizer.jpeg</normaloff>inverter_stabilizer.jpeg</iconset>
+      <normaloff>inverter_stabilizer.png</normaloff>inverter_stabilizer.png</iconset>
     </property>
     <property name="iconSize">
      <size>
-      <width>100</width>
+      <width>70</width>
       <height>100</height>
      </size>
     </property>
@@ -186,7 +198,7 @@
    <widget class="QPushButton" name="pushButton_heater">
     <property name="geometry">
      <rect>
-      <x>570</x>
+      <x>630</x>
       <y>70</y>
       <width>80</width>
       <height>80</height>
@@ -209,11 +221,11 @@
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>room_heater.jpeg</normaloff>room_heater.jpeg</iconset>
+      <normaloff>room_heater.png</normaloff>room_heater.png</iconset>
     </property>
     <property name="iconSize">
      <size>
-      <width>100</width>
+      <width>70</width>
       <height>100</height>
      </size>
     </property>
@@ -221,8 +233,8 @@
    <widget class="QLabel" name="label_9">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>390</y>
+      <x>350</x>
+      <y>410</y>
       <width>60</width>
       <height>18</height>
      </rect>
@@ -237,8 +249,8 @@
    <widget class="QPushButton" name="pushButton_chandeller">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>210</y>
+      <x>340</x>
+      <y>200</y>
       <width>80</width>
       <height>80</height>
      </rect>
@@ -260,20 +272,20 @@
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>chandeller.jpeg</normaloff>chandeller.jpeg</iconset>
+      <normaloff>chandeller.png</normaloff>chandeller.png</iconset>
     </property>
     <property name="iconSize">
      <size>
-      <width>100</width>
-      <height>100</height>
+      <width>70</width>
+      <height>80</height>
      </size>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_light">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>210</y>
+      <x>70</x>
+      <y>200</y>
       <width>80</width>
       <height>80</height>
      </rect>
@@ -295,20 +307,20 @@
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>light.jpg</normaloff>light.jpg</iconset>
+      <normaloff>light.png</normaloff>light.png</iconset>
     </property>
     <property name="iconSize">
      <size>
-      <width>130</width>
-      <height>130</height>
+      <width>90</width>
+      <height>100</height>
      </size>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>290</y>
+      <x>90</x>
+      <y>280</y>
       <width>31</width>
       <height>18</height>
      </rect>
@@ -323,8 +335,8 @@
    <widget class="QLabel" name="label_13">
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>520</y>
+      <x>630</x>
+      <y>530</y>
       <width>88</width>
       <height>18</height>
      </rect>
@@ -339,8 +351,8 @@
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>580</x>
-      <y>290</y>
+      <x>640</x>
+      <y>280</y>
       <width>61</width>
       <height>18</height>
      </rect>
@@ -355,7 +367,7 @@
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>570</x>
+      <x>630</x>
       <y>150</y>
       <width>82</width>
       <height>21</height>
@@ -371,7 +383,7 @@
    <widget class="QPushButton" name="pushButton_fan">
     <property name="geometry">
      <rect>
-      <x>300</x>
+      <x>340</x>
       <y>70</y>
       <width>80</width>
       <height>80</height>
@@ -394,11 +406,11 @@
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>fan.jpeg</normaloff>fan.jpeg</iconset>
+      <normaloff>fan.png</normaloff>fan.png</iconset>
     </property>
     <property name="iconSize">
      <size>
-      <width>120</width>
+      <width>70</width>
       <height>200</height>
      </size>
     </property>
@@ -406,8 +418,8 @@
    <widget class="QPushButton" name="pushButton_aircooler">
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>310</y>
+      <x>630</x>
+      <y>320</y>
       <width>80</width>
       <height>80</height>
      </rect>
@@ -429,11 +441,11 @@
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>air_cooler.jpeg</normaloff>air_cooler.jpeg</iconset>
+      <normaloff>air_cooler.png</normaloff>air_cooler.png</iconset>
     </property>
     <property name="iconSize">
      <size>
-      <width>100</width>
+      <width>60</width>
       <height>100</height>
      </size>
     </property>
@@ -441,8 +453,8 @@
    <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>520</y>
+      <x>90</x>
+      <y>530</y>
       <width>41</width>
       <height>18</height>
      </rect>
@@ -457,8 +469,8 @@
    <widget class="QLabel" name="label_12">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>520</y>
+      <x>350</x>
+      <y>530</y>
       <width>56</width>
       <height>18</height>
      </rect>
@@ -473,24 +485,24 @@
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>390</y>
-      <width>62</width>
-      <height>51</height>
+      <x>40</x>
+      <y>400</y>
+      <width>131</width>
+      <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">color:black;</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Inverter &amp;amp;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Stabilizer&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Inverter &amp;amp; Stabilizer&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_appliance">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>310</y>
+      <x>340</x>
+      <y>320</y>
       <width>80</width>
       <height>80</height>
      </rect>
@@ -512,11 +524,11 @@
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>appliance.jpeg</normaloff>appliance.jpeg</iconset>
+      <normaloff>appliance.png</normaloff>appliance.png</iconset>
     </property>
     <property name="iconSize">
      <size>
-      <width>100</width>
+      <width>70</width>
       <height>100</height>
      </size>
     </property>
@@ -524,8 +536,8 @@
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>290</y>
+      <x>350</x>
+      <y>280</y>
       <width>68</width>
       <height>18</height>
      </rect>
@@ -540,8 +552,8 @@
    <widget class="QPushButton" name="pushButton_doorbell">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>440</y>
+      <x>340</x>
+      <y>450</y>
       <width>80</width>
       <height>80</height>
      </rect>
@@ -563,7 +575,7 @@
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>doorbell.jpeg</normaloff>doorbell.jpeg</iconset>
+      <normaloff>doorbell.png</normaloff>doorbell.png</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -575,8 +587,8 @@
    <widget class="QPushButton" name="pushButton_mcb">
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>210</y>
+      <x>630</x>
+      <y>200</y>
       <width>80</width>
       <height>80</height>
      </rect>
@@ -598,7 +610,7 @@
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>mcb_fuse.jpeg</normaloff>mcb_fuse.jpeg</iconset>
+      <normaloff>mcb_fuse.png</normaloff>mcb_fuse.png</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -610,10 +622,10 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>330</x>
+      <x>370</x>
       <y>150</y>
       <width>23</width>
-      <height>36</height>
+      <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -626,8 +638,8 @@
    <widget class="QPushButton" name="pushButton_wiring">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>440</y>
+      <x>70</x>
+      <y>450</y>
       <width>80</width>
       <height>80</height>
      </rect>
@@ -649,19 +661,19 @@
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>wiring.jpeg</normaloff>wiring.jpeg</iconset>
+      <normaloff>wiring.png</normaloff>wiring.png</iconset>
     </property>
     <property name="iconSize">
      <size>
-      <width>130</width>
-      <height>130</height>
+      <width>70</width>
+      <height>60</height>
      </size>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_switch">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>70</x>
       <y>70</y>
       <width>80</width>
       <height>80</height>
@@ -687,12 +699,12 @@
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>switch_socket.jpeg</normaloff>switch_socket.jpeg</iconset>
+      <normaloff>switch_socket.png</normaloff>switch_socket.png</iconset>
     </property>
     <property name="iconSize">
      <size>
-      <width>120</width>
-      <height>140</height>
+      <width>70</width>
+      <height>80</height>
      </size>
     </property>
    </widget>
