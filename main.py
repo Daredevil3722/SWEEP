@@ -11,6 +11,9 @@ import mysql.connector
 # pip install mysql-connector 
 # pip install pandas 
 from pandas.core.common import flatten
+#Email libraries
+import smtplib
+from email.mime.multipart import MIMEMultipart
 
 # ---------------------------------------------------Variables and misc---------------------------------------------------- #
 
@@ -42,6 +45,19 @@ else :
  ___) | |_| | |___  | |  | |  __/\__ \__ \  __/ (_| | | |_| | |_) |
 |____/ \__\_\_____| |_|  |_|\___||___/___/\___|\__,_|  \__,_| .__/
                                                             |_|''')
+
+
+
+
+try:
+    global server
+    server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
+    server.ehlo()
+    server.login('systems.sweep@gmail.com', 'sweeppass')
+except:
+    print('Something went wrong with mail server')
+
+
 
 global curs 
 curs  = db.cursor()
