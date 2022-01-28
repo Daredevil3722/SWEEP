@@ -700,6 +700,10 @@ class transaction_netbanking_page(QMainWindow):
 
 app = QApplication(sys.argv)
 widget = QtWidgets.QStackedWidget()
+widget.setMaximumHeight(600)
+widget.setMaximumWidth(800)
+widget.setMinimumHeight(600)
+widget.setMinimumWidth(800)
 
 login_register = loginregister()
 login = login_page()
