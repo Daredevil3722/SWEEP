@@ -7,15 +7,27 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>594</height>
+    <height>600</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
   <property name="windowTitle">
-   <string>Transaction </string>
+   <string>SWEEP</string>
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>../AnuragProj/GrowPal edited/GrowPal/logo.jpg</normaloff>../AnuragProj/GrowPal edited/GrowPal/logo.jpg</iconset>
+    <normaloff>logo.jpg</normaloff>logo.jpg</iconset>
   </property>
   <property name="windowOpacity">
    <double>1.000000000000000</double>
@@ -130,8 +142,8 @@
    <widget class="QPushButton" name="pushButton_back">
     <property name="geometry">
      <rect>
-      <x>730</x>
-      <y>530</y>
+      <x>734</x>
+      <y>534</y>
       <width>60</width>
       <height>60</height>
      </rect>

@@ -23,14 +23,18 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>SWEEP</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>logo.jpg</normaloff>logo.jpg</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="pushButton_back">
     <property name="geometry">
      <rect>
-      <x>730</x>
-      <y>520</y>
+      <x>734</x>
+      <y>534</y>
       <width>60</width>
       <height>60</height>
      </rect>
