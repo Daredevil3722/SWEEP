@@ -19,8 +19,17 @@ from email.mime.multipart import MIMEMultipart
 
 global loginpage_details
 loginpage_details = []
-global registerpage_email 
-global registerpage_password 
+global lineEdit_username
+lineEdit_username = ""
+global lineEdit_email
+lineEdit_email = ""
+global lineEdit_phnumber
+lineEdit_phnumber = ""
+global lineEdit_password
+lineEdit_password = ""
+global lineEdit_repeatpassword
+lineEdit_repeatpassword = ""
+
 global listItems 
 listItems = {}
 
@@ -28,7 +37,7 @@ global fileGiven
 #fileGiven = --need to put.jpg file here--
 
 global db
-db = mysql.connector.connect(host = 'localhost', user = 'admin_SWEEP', password  = 'admin@password@SWEEP', database = 'SWEEP')
+db = mysql.connector.connect(host = 'archserver.ddns.net', user = 'sweep', password  = 'password@sweep', database = 'SWEEP')
 
 if (db) :
     print(r''' ____   ___  _        ____                            _           _
@@ -96,8 +105,6 @@ class login_page(QMainWindow):
     def __init__(self):
         super(login_page, self).__init__()
         loadUi("login_page.ui", self)
-        logged_in_username = ""
-        logged_in_password = ""
         self.pushButton_back.clicked.connect(self.back_button_pressed)
         self.pushbutton_login.clicked.connect(self.login_button_pressed)
         self.password_view.clicked.connect(self.pass_view_clicked)
@@ -197,7 +204,10 @@ class register_page(QMainWindow):
 
                     curs.execute(f"insert into login_details values('{self.lineEdit_username.text()}', '{self.lineEdit_password.text()}', '{self.lineEdit_email.text()}', '{self.lineEdit_phnumber.text()}')")  
                     db.commit()
-                    getLoginDetails()  
+                    getLoginDetails()
+                    self.lineEdit_username.setText("")
+                    self.lineEdit_email.setText("")
+                    self.lineEdit_phnumber.setText("")
                     self.lineEdit_password.setText("")
                     self.lineEdit_repeatpassword.setText("")
                     error_dialog = QtWidgets.QErrorMessage(self)
