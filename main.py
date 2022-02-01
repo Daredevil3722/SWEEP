@@ -687,6 +687,9 @@ class transaction_paytm_page(QMainWindow):
         self.pushButton_cancel.clicked.connect(self.cancelbutton_clicked)
 
     def paybutton_clicked(self):
+        error_dialog = QtWidgets.QErrorMessage(self)
+        error_dialog.setWindowTitle('Booking')
+        error_dialog.showMessage('Your booking has been placed.')
         widget.setCurrentIndex(4)
 
     def cancelbutton_clicked(self):
@@ -702,6 +705,9 @@ class transaction_upi_page(QMainWindow):
         self.pushButton_cancel.clicked.connect(self.cancelbutton_clicked)
 
     def paybutton_clicked(self):
+        error_dialog = QtWidgets.QErrorMessage(self)
+        error_dialog.setWindowTitle('Booking')
+        error_dialog.showMessage('Your booking has been placed.')
         widget.setCurrentIndex(4)
 
     def cancelbutton_clicked(self):
@@ -717,7 +723,11 @@ class transaction_netbanking_page(QMainWindow):
         self.pushButton_cancel.clicked.connect(self.cancelbutton_clicked)
 
     def paybutton_clicked(self):
+        error_dialog = QtWidgets.QErrorMessage(self)
+        error_dialog.setWindowTitle('Booking')
+        error_dialog.showMessage('Your booking has been placed.')
         widget.setCurrentIndex(4)
+        
 
     def cancelbutton_clicked(self):
         widget.setCurrentIndex(4)
