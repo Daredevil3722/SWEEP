@@ -21,6 +21,8 @@ global loginpage_details
 loginpage_details = []
 global lineEdit_username
 lineEdit_username = ""
+global in_username
+in_username = ""
 global lineEdit_email
 lineEdit_email = ""
 global lineEdit_phnumber
@@ -130,6 +132,8 @@ class login_page(QMainWindow):
             if self.lineEdit_username.text() in loginpage_details:
                 if self.lineEdit_password.text() == loginpage_details[loginpage_details.index(self.lineEdit_username.text()) + 1]:
                     login_page.logged_in_username = self.lineEdit_username.text()
+                    global in_username
+                    in_username = login_page.logged_in_username
                     login_page.logged_in_password = self.lineEdit_password.text()
                     self.lineEdit_username.setText("")
                     self.lineEdit_password.setText("")
@@ -708,6 +712,23 @@ class transaction_upi_page(QMainWindow):
         error_dialog = QtWidgets.QErrorMessage(self)
         error_dialog.setWindowTitle('Booking')
         error_dialog.showMessage('Your booking has been placed.')
+        global in_username
+        print(in_username)
+        curs.execute(f"select email_or_fcbk from login_details where username = '{in_username}'")
+        send_to_email = curs.fetchone()
+        send_to_email = str(send_to_email[0])
+        msg = "\r\n".join([
+                "From: systems.sweep@gmail.com",
+                f"To: {send_to_email}",
+                f"Subject: Booking Confirmed [NO REPLY]",
+                "",
+                f'''Dear Customer, 
+This is a test
+
+Regards
+Team SWEEP  '''
+                ])
+        server.sendmail('systems.sweep@gmail.com', send_to_email, msg)
         widget.setCurrentIndex(4)
 
     def cancelbutton_clicked(self):
