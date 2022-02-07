@@ -694,6 +694,23 @@ class transaction_paytm_page(QMainWindow):
         error_dialog = QtWidgets.QErrorMessage(self)
         error_dialog.setWindowTitle('Booking')
         error_dialog.showMessage('Your booking has been placed.')
+        global in_username
+        print(in_username)
+        curs.execute(f"select email_or_fcbk from login_details where username = '{in_username}'")
+        send_to_email = curs.fetchone()
+        send_to_email = str(send_to_email[0])
+        msg = "\r\n".join([
+                "From: systems.sweep@gmail.com",
+                f"To: {send_to_email}",
+                f"Subject: Booking Confirmed [NO REPLY]",
+                "",
+                f'''Dear Customer, 
+This is a test
+
+Regards
+Team SWEEP  '''
+                ])
+        server.sendmail('systems.sweep@gmail.com', send_to_email, msg)
         widget.setCurrentIndex(4)
 
     def cancelbutton_clicked(self):
@@ -747,6 +764,23 @@ class transaction_netbanking_page(QMainWindow):
         error_dialog = QtWidgets.QErrorMessage(self)
         error_dialog.setWindowTitle('Booking')
         error_dialog.showMessage('Your booking has been placed.')
+        global in_username
+        print(in_username)
+        curs.execute(f"select email_or_fcbk from login_details where username = '{in_username}'")
+        send_to_email = curs.fetchone()
+        send_to_email = str(send_to_email[0])
+        msg = "\r\n".join([
+                "From: systems.sweep@gmail.com",
+                f"To: {send_to_email}",
+                f"Subject: Booking Confirmed [NO REPLY]",
+                "",
+                f'''Dear Customer, 
+This is a test
+
+Regards
+Team SWEEP  '''
+                ])
+        server.sendmail('systems.sweep@gmail.com', send_to_email, msg)
         widget.setCurrentIndex(4)
         
 
