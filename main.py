@@ -695,7 +695,6 @@ class transaction_paytm_page(QMainWindow):
         error_dialog.setWindowTitle('Booking')
         error_dialog.showMessage('Your booking has been placed.')
         global in_username
-        print(in_username)
         curs.execute(f"select email_or_fcbk from login_details where username = '{in_username}'")
         send_to_email = curs.fetchone()
         send_to_email = str(send_to_email[0])
@@ -730,7 +729,6 @@ class transaction_upi_page(QMainWindow):
         error_dialog.setWindowTitle('Booking')
         error_dialog.showMessage('Your booking has been placed.')
         global in_username
-        print(in_username)
         curs.execute(f"select email_or_fcbk from login_details where username = '{in_username}'")
         send_to_email = curs.fetchone()
         send_to_email = str(send_to_email[0])
@@ -765,7 +763,6 @@ class transaction_netbanking_page(QMainWindow):
         error_dialog.setWindowTitle('Booking')
         error_dialog.showMessage('Your booking has been placed.')
         global in_username
-        print(in_username)
         curs.execute(f"select email_or_fcbk from login_details where username = '{in_username}'")
         send_to_email = curs.fetchone()
         send_to_email = str(send_to_email[0])
