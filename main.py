@@ -704,7 +704,8 @@ class transaction_paytm_page(QMainWindow):
                 f"Subject: Booking Confirmed [NO REPLY]",
                 "",
                 f'''Dear Customer, 
-This is a test
+This is to confirm that we have received your booking. We pledge to provide you with the best possible at-home service experience. 
+Thank you again for making it possible.
 
 Regards
 Team SWEEP  '''
@@ -738,7 +739,8 @@ class transaction_upi_page(QMainWindow):
                 f"Subject: Booking Confirmed [NO REPLY]",
                 "",
                 f'''Dear Customer, 
-This is a test
+This is to confirm that we have received your booking. We pledge to provide you with the best possible at-home service experience. 
+Thank you again for making it possible.
 
 Regards
 Team SWEEP  '''
@@ -772,7 +774,8 @@ class transaction_netbanking_page(QMainWindow):
                 f"Subject: Booking Confirmed [NO REPLY]",
                 "",
                 f'''Dear Customer, 
-This is a test
+This is to confirm that we have received your booking. We pledge to provide you with the best possible at-home service experience. 
+Thank you again for making it possible.
 
 Regards
 Team SWEEP  '''
