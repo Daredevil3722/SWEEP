@@ -44,12 +44,6 @@ lineEdit_password = ""
 global lineEdit_repeatpassword
 lineEdit_repeatpassword = ""
 
-global listItems 
-listItems = {}
-
-global fileGiven 
-#fileGiven = --need to put.jpg file here--
-
 global db
 db = mysql.connector.connect(host = 'archserver.ddns.net', user = 'sweep', password  = 'password@sweep', database = 'SWEEP')
 
