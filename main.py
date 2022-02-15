@@ -1,5 +1,17 @@
-#pip install PyQt5
-import sys 
+#!/usr/bin/python
+#
+#   ______        _______ _____ ____   
+#  / ___\ \      / / ____| ____|  _ \  
+# \___ \\ \ /\ / /|  _| |  _| | |_) |
+#  ___) |\ V  V / | |___| |___|  __/  
+# |____/  \_/\_/  |_____|_____|_|     
+#                                  
+#
+# Please go through the README file before execution
+# Visit https://github.com/Daredevil3722/SWEEP for the latest version and other info
+# ---------------------------------------------------Import statements-------------------------------------------------- #
+import sys
+#pip install PyQt5  
 from PyQt5.uic import loadUi
 from PyQt5 import QtWidgets
 from PyQt5 import QtGui
