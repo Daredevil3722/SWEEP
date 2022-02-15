@@ -15,7 +15,7 @@ import sys
 from PyQt5.uic import loadUi
 from PyQt5 import QtWidgets
 from PyQt5 import QtGui
-from PyQt5.QtWidgets import QDialog, QApplication, QMainWindow, QLineEdit, QWidget, QFileDialog, QLabel
+from PyQt5.QtWidgets import QDialog, QApplication, QMainWindow, QLineEdit, QWidget, QFileDialog, QLabel, QMessageBox
 from PyQt5.QtGui import QIcon, QPixmap
 from validate_email import validate_email
 # pip install validate_email
@@ -313,7 +313,7 @@ class home_page(QMainWindow):
         loadUi("home.ui", self)
         #menubar.self.menubar()
         #menubar.setNativeMenuBar(False)
-        self.pushButton_logout.clicked.connect(self.logout)
+        self.pushButton_logout.clicked.connect(self.are_you_sure)
         self.pushButton_bookings.clicked.connect(self.gotobookings)
 
         self.electrical_button.clicked.connect(self.gotoelectricals)
@@ -325,8 +325,24 @@ class home_page(QMainWindow):
         self.yardwork_button.clicked.connect(self.gotoyardwork)
         self.cleaning_button.clicked.connect(self.gotocleaning)
 
-    def logout(self):
-        widget.setCurrentIndex(0)
+    def are_you_sure(self):
+        msg = QMessageBox()
+        msg.setWindowTitle("Logout")
+        msg.setText("Are you sure?")
+        msg.setIcon(QMessageBox.Question)
+        msg.setStandardButtons(QMessageBox.Yes|QMessageBox.No)
+        msg.setDefaultButton(QMessageBox.No)
+        msg.buttonClicked.connect(self.popup_button)
+        x = msg.exec_()
+
+    def popup_button(self, button):
+        button_pressed = button.text()
+
+        if button_pressed == '&Yes':
+            widget.setCurrentIndex(0)
+
+        else:
+            pass
 
     def gotobookings(self):
         widget.setCurrentIndex(5)
