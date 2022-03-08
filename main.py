@@ -1,7 +1,7 @@
 #!/usr/bin/python
 #
-#   ______        _______ _____ ____   
-#  / ___\ \      / / ____| ____|  _ \  
+#  ______        _______ _____ ____   
+# / ___\ \      / / ____| ____|  _ \  
 # \___ \\ \ /\ / /|  _| |  _| | |_) |
 #  ___) |\ V  V / | |___| |___|  __/  
 # |____/  \_/\_/  |_____|_____|_|     
@@ -45,10 +45,19 @@ global lineEdit_repeatpassword
 lineEdit_repeatpassword = ""
 
 global db
-db = mysql.connector.connect(host = 'archserver.ddns.net', user = 'sweep', password  = 'password@sweep', database = 'SWEEP')
+
+try:
+    db = mysql.connector.connect(host='localhost', user = 'root', passwd = 'cajc', database = 'SWEEP')
+    print("Successfully Connected To Local SQL Server") 
+except:
+    try: 
+        db = mysql.connector.connect(host= 'archserver.ddns.net', user = 'sweep', passwd = 'password@sweep', database = 'SWEEP')
+        print("Successfully Connected Arch Server") 
+    except: print("Error Connecting to SQL Server")
 
 if (db) :
-    print(r''' ____   ___  _        ____                            _           _
+    print(r'''
+ ____   ___  _        ____                            _           _
 / ___| / _ \| |      / ___|___  _ __  _ __   ___  ___| |_ ___  __| |
 \___ \| | | | |     | |   / _ \| '_ \| '_ \ / _ \/ __| __/ _ \/ _` |
  ___) | |_| | |___  | |__| (_) | | | | | | |  __/ (__| ||  __/ (_| |
@@ -56,7 +65,8 @@ if (db) :
 ''')
 
 else :
-    print(r''' ____   ___  _       __  __                        _
+    print(r'''
+ ____   ___  _       __  __                        _
 / ___| / _ \| |     |  \/  | ___  ___ ___  ___  __| |  _   _ _ __
 \___ \| | | | |     | |\/| |/ _ \/ __/ __|/ _ \/ _` | | | | | '_ \
  ___) | |_| | |___  | |  | |  __/\__ \__ \  __/ (_| | | |_| | |_) |
