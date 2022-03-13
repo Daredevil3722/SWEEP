@@ -47,7 +47,7 @@ lineEdit_repeatpassword = ""
 global db
 
 try:
-    db = mysql.connector.connect(host='localhost', user = 'root', passwd = 'cajc', database = 'SWEEP')
+    db = mysql.connector.connect(host='localhost', user = 'student', passwd = 'student', database = 'SWEEP')
     print("Successfully Connected To Local SQL Server") 
 except:
     try: 
