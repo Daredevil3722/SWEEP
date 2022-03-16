@@ -25,7 +25,7 @@ CREATE TABLE net_banking(
 );
 
 CREATE TABLE upi(
-    username VARCHAR(50) PRIMARY KEY,
+    username VARCHAR(50),
     cost INT,
     UPI_ID INT,
     flat_number INT,
